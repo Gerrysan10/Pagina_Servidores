@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Administración de servidores</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!--
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img style="height: 75px;" src="assets/images/icono.svg" alt="">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section" style="background-color: #272727;"><a href="#top" class="active">Inicio</a></li>
+                          <li class="scroll-to-section"  style="background-color: #272727;"><a href="#services">contenido</a></li>
+                          <li class="has-sub" style="background-color: #272727;">
+                            <a href="javascript:void(0)">Lista PDF'S</a>
+                            <ul class="sub-menu">
+                                <li><a href="javascript:void(0)" onclick="redirigirYcargarPDF('DHCP.pdf')">DHCP</a></li>
+                                <li><a href="javascript:void(0)" onclick="redirigirYcargarPDF('DNS.pdf')">DNS</a></li>
+                                <li><a href="javascript:void(0)" onclick="redirigirYcargarPDF('FTP.pdf')">FTP</a></li>
+                                <li><a href="javascript:void(0)" onclick="redirigirYcargarPDF('HTTP.pdf')">HTTP</a></li>
+                                <li><a href="javascript:void(0)" onclick="redirigirYcargarPDF('Correo.pdf')">Correo</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#autor">Contacto</a></li> 
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <div class="swiper-container" id="top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/servidores.jpg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><em>Conoce</em> sobre la administración de servidores<em> aquí</em></h2>
+                  <div class="div-dec"></div>
+                  <p> La administración de servidores y la configuración de servicios son elementos críticos en el despliegue y mantenimiento de infraestructuras informáticas. En este contexto, abordaremos dos aspectos fundamentales: la instalación y configuración de servidores esenciales como Web, FTP, DHCP y Correo, así como la posterior administración de estos servicios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/servidores2.png)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><em>Aprenderemos </em>como crear nuestros <br>servidores <em>Web</em></h2>
+                  <div class="div-dec"></div>
+                  <p>Nos sumergiremos en el proceso de implementación de servicios clave. Comenzaremos explorando la instalación de servidores web, piezas fundamentales para la exposición de contenido en la red.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-inner" style="background-image:url(assets/images/servidores3.jpeg)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="header-text">
+                  <h2><em>Veremos</em> la manera en que se administran <br> los <em>servicios</em> instalados</h2>
+                  <div class="div-dec"></div>
+                  <p>Nos adentraremos en la configuración de servidores FTP (File Transfer Protocol), esenciales para la transferencia segura de archivos. El despliegue y configuración de servidores DHCP (Dynamic Host Configuration Protocol) también será abordado, facilitando la asignación dinámica de direcciones IP en redes.
+
+                    Además, exploraremos la instalación y configuración de servidores de correo electrónico, entre otros más</p>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i><img style="height: 80px; width: auto;" src="assets/images/dhcp.png" alt=""></i>
+            <h4>DHCP</h4>
+            <p>Automatiza la asignación de direcciones IP en una red, asignando dinámicamente direcciones únicas.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item" >
+            <i><img style="height: 80px; width: auto;" src="assets/images/dns.png" alt=""></i>
+            <h4>DNS</h4>
+            <p>Traduce nombres de dominio legibles para los humanos en direcciones IP comprensibles por las máquinas.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i><img style="height: 80px; width: auto;" src="assets/images/ftp.png" alt=""></i>
+            <h4>FTP</h4>
+            <p>Protocolo de red diseñado para la transferencia de archivos entre sistemas conectados a una red.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i><img style="height: 80px; width: auto;" src="assets/images/sitio-web.png" alt=""></i>
+            <h4>HTTP</h4>
+            <p>protocolo de comunicación utilizado para la transmisión de información en la World Wide Web.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i><img style="height: 80px; width: auto;" src="assets/images/gmail.png" alt=""></i>
+            <h4>Correo (SMTP,POP)</h4>
+            <p>Permite el intercambio de mensajes entre usuarios a través de sistemas de correo electrónico.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-item">
+            <i><img style="height: 80px; width: auto;" src="assets/images/terminar.png" alt=""></i>
+            <h4>¡Terminado!</h4>
+            <p>Haz recorrido todos las prácticas realizadas en administración de servidores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-15" >
+          <h4 style="text-align: center;">Aprende <em>distintos</em> temas de <strong>Administración de servidores</strong></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contenido">
+    <div  style="text-align:center;margin: 0;justify-content:center ;padding: 0; height: 700px;">
+      <h2 style="font-weight: bold; margin-bottom: 70px;">PDF'S</h2>
+      <p id="textcontenido" style="font-size: 25px;">Seleccione un PDF de la (Lista PDF'S) para mostrar su contenido aquí.</p>
+      <div id="content" style="width: auto; height: 650px;">
+          <iframe style="width: 80%; height: 88%;" name="pdfFrame"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer id="autor">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2023 Luis Gerardo Ovando Sandoval. <br><em style="color: #f13232;">20460135@colima.tecnm.mx</em></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        var interleaveOffset = 0.5;
+
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        on: {
+          progress: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }      
+          },
+          touchStart: function() {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function(speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          }
+        }
+      };
+
+      var swiper = new Swiper(".swiper-container", swiperOptions);
+
+      function redirigirYcargarPDF(pdfNombre) {
+        // Redirige a la sección con id=contenido
+        window.location.href = '#contenido';
+
+        // Actualiza el atributo src del iframe con el nombre del PDF
+        document.getElementsByName("pdfFrame")[0].src = pdfNombre;
+        var mensajeContenido = document.getElementById("textcontenido");
+        mensajeContenido.innerText = pdfNombre === 'PDF' ? "Seleccione un PDF para mostrar su contenido aquí." : "";
+
+      }
+    </script>
+  </body>
+</html>
